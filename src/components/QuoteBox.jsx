@@ -9,7 +9,7 @@ const QuoteBox = ({}) => {
 
     const changeIndex = () => {
         setQuoteIndex(Math.floor(Math.random() * Quotes.length))
-        setPgColor("#" +  Math.floor(Math.random() * 1000000))
+        setPgColor("#" +  Math.floor(Math.random()*16777215).toString(16))
         document.body.style.backgroundColor = pgColor
     }
 
