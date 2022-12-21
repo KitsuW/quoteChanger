@@ -5,7 +5,7 @@ import Quotes from "./Quotes.json"
 const QuoteBox = ({}) => {
     
     const [ quoteIndex, setQuoteIndex ] = useState(Math.floor(Math.random() * Quotes.length))
-    const [ pgColor, setPgColor ] = useState("red")
+    const [ pgColor, setPgColor ] = useState("#" +  Math.floor(Math.random()*16777215).toString(16))
 
     const changeIndex = () => {
         setQuoteIndex(Math.floor(Math.random() * Quotes.length))
